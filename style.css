@@ -1,0 +1,9 @@
+/*for table border*/
+table, th,td {
+    border: 1px solid black; border-collapse: collapse;
+}
+
+/*this is for the text*/
+.text {
+  color: red;
+}
