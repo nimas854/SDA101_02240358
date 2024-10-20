@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Node Properties Example</title>
+</head>
+<body>
+    <div id="content">
+        <p id="paragraph">Hello, World!</p>
+        <a id="link" href="https://example.com">Visit Example</a>
+        <span id="emptySpan"></span>
+    </div>
+
+    <script>
+        // Example for nodeValue (Text Node)
+        let paragraph = document.getElementById("paragraph");
+        let textNode = paragraph.firstChild; // First child of <p> is the text node
+        console.log("Text Node Value:", textNode.nodeValue); // Outputs: "Hello, World!"
+
+        // Example for tagName (Element Node)
+        let divElement = document.getElementById("content");
+        console.log("Tag Name of Div Element:", divElement.tagName); // Outputs: "DIV"
+
+        // Example for attributes (Element Node)
+        let linkElement = document.getElementById("link");
+        console.log("Attributes of Link Element:", linkElement.attributes); // Outputs the attributes of the <a> tag
+        console.log("Href Attribute Value:", linkElement.getAttribute("href")); // Outputs: "https://example.com"
+
+        // Example for childNodes (Element Node)
+        console.log("Child Nodes of Div Element:", divElement.childNodes); // Outputs NodeList of children, including <p>, <a>, and <span>
+
+        // Iterating over child nodes
+        divElement.childNodes.forEach((node) => {
+            if (node.nodeType === 1) { // Element nodes have nodeType 1
+                console.log("Element Node Tag Name:", node.tagName);
+            } else if (node.nodeType === 3) { // Text nodes have nodeType 3
+                console.log("Text Node Value:", node.nodeValue);
+            }
+        });
+
+        // Demonstrating an element with no text content (empty span)
+        let emptySpan = document.getElementById("emptySpan");
+        console.log("Empty Span Node Value:", emptySpan.firstChild ? emptySpan.firstChild.nodeValue : "No text content"); // Outputs: "No text content"
+    </script>
+</body>
+</html>
+
+Text Node (nodeValue):
+
+In the <p> tag, the text content "Hello, World!" is accessed via the nodeValue of the first child node, which is a text node.
+Element Node (tagName):
+
+The tagName of the <div> element is accessed and displayed. This is useful for identifying the type of element you're working with.
+Attributes of an Element Node (attributes):
+
+The <a> tag's attributes are accessed using the attributes property. The href attribute is accessed separately using getAttribute.
+Child Nodes of an Element Node (childNodes):
+
+The childNodes of the <div> element are accessed, which returns a NodeList of all child nodes, including both element and text nodes.
+The code iterates over each child node and checks whether it's an element node (using nodeType === 1) or a text node 
+(using nodeType === 3).
+Handling Empty Nodes:
+
+The <span> tag in this example has no text content, and its firstChild is null. This is demonstrated by checking whether firstChild
+     exists before accessing its nodeValue.

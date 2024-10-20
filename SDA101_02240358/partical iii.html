@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Interior Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+    }
+
+    section.hero {
+      background-color: #e6e6e6;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    section.hero img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    section.services, section.portfolio, section.team, section.contact {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section.services h2, section.portfolio h2, section.team h2, section.contact h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .service-grid, .portfolio-grid, .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .service-item, .portfolio-item, .team-member {
+      flex: 1 1 30%;
+      background-color: #fff;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member img {
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://www.hntfurniture.com/assets/frontend/img/tablesandchairs.png" alt="Logo">
+</header>
+
+<section class="hero">
+  <h1>Interior Design</h1>
+  <p>Design Your Dream Space</p>
+</section>
+
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+    <div class="service-item">
+      <h3>Residential Design</h3>
+      <p>Beautiful homes with a touch of elegance.</p>
+    </div>
+    <div class="service-item">
+      <h3>Office Interiors</h3>
+      <p>Create an inspiring workspace.</p>
+    </div>
+    <div class="service-item">
+      <h3>Hospitality Design</h3>
+      <p>Luxurious and welcoming environments.</p>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio">
+  <h2>Project Portfolio</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <h3>Luxury Apartments</h3>
+      <img src="path-to-image" alt="Luxury Apartments">
+    </div>
+    <div class="portfolio-item">
+      <h3>Corporate Offices</h3>
+      <img src="path-to-image" alt="Corporate Offices">
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <h2>Our Amazing Team</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="path-to-image" alt="Team Member">
+      <h4>Ann Norton</h4>
+      <p>Designer</p>
+    </div>
+    <div class="team-member">
+      <img src="path-to-image" alt="Team Member">
+      <h4>John Doe</h4>
+      <p>Architect</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>Email: info@interiordesign.com</p>
+  <p>Phone: (123) 456-7890</p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Interior Design. All rights reserved.</p>
+  <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>

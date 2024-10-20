@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertBefore Example</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="child1">Child 1</p>
+        <p id="child2">Child 2</p>
+    </div>
+
+    <script>
+        const parentDiv = document.getElementById('parent');
+        const child1 = document.getElementById('child1');
+
+        // Create new node and insert it before Child 1
+        const newChild = document.createElement('p');
+        newChild.textContent = 'Child 0';
+        parentDiv.insertBefore(newChild, child1); // Inserts Child 0 before Child 1
+    </script>
+</body>
+</html>

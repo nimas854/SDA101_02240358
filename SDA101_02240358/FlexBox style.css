@@ -1,0 +1,4 @@
+/* border: table_width table_color; */
+th,td {
+    border: 1px solid black;
+}
