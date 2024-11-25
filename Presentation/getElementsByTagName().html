@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByTagName Example</title>
+</head>
+<body> 
+    <p>This is some sample text</p>
+    <p>This is some <span>more</span> sample text</p>
+    <p>This is even more <span>sample</span> text</p>
+    <p>This is more and more sample <span>text</span></p>
+    <button onclick="highlightItems()">Highlight Items</button>
+    
+
+    <script>
+        function highlightItems(){
+            // Select all span elements
+var highlightItems = document.getElementsByTagName("span");
+// Loop through the NodeList and change the background color of the first three items
+for (var i = 0; i < highlightItems.length; i++) 
+highlightItems[i].style.backgroundColor = "yellow";
+        }
+
+    
+    </script>
+</body>
+</html>

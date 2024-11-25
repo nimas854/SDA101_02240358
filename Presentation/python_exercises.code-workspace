@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "python_exercises",
+			"path": "../../python_exercises"
+		},
+		{
+			"name": "SDA101_02240358",
+			"path": ".."
+		},
+		{
+			"name": "CSF assignment",
+			"path": "../../CSF assignment"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SDA101_02240358"
+	}
+}

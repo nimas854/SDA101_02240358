@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Component</title>
+    <style>
+        user-profile {
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .role {
+            font-size: 1em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <user-profile name="John Doe" role="Administrator"></user-profile>
+    <user-profile name="Jane Smith" role="Editor"></user-profile>
+
+    <script>
+        class UserProfile extends HTMLElement {
+            constructor() {
+                super();
+                this.attachShadow({ mode: 'open' });
+                this.render();
+            }
+
+            static get observedAttributes() {
+                return ['name', 'role'];
+            }
+
+            attributeChangedCallback(name, oldValue, newValue) {
+                this.render();
+            }
+
+            render() {
+                const name = this.getAttribute('name') || 'Unknown User';
+                const role = this.getAttribute('role') || 'No Role';
+
+                this.shadowRoot.innerHTML = `
+                    <style>
+                        user-profile {
+                            display: block;
+                            border: 1px solid #ccc;
+                            border-radius: 8px;
+                            padding: 16px;
+                            margin: 10px;
+                            background-color: #f9f9f9;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            font-family: Arial, sans-serif;
+                        }
+                        .name {
+                            font-size: 1.5em;
+                            font-weight: bold;
+                        }
+                        .role {
+                            font-size: 1em;
+                            color: #666;
+                        }
+                    </style>
+                    <div class="name">${name}</div>
+                    <div class="role">${role}</div>
+                `;
+            }
+        }
+
+        // Define the custom element
+        customElements.define('user-profile', UserProfile);
+    </script>
+</body>
+</html>

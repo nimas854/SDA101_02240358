@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="highlight">Item 1</p>
+    <p class="highlight">Item 2</p>
+    <p class="other-class">Item 3</p>
+    <p class="highlight">Item 4</p>
+    <button onclick="highlightItems()">Highlight Items</button>
+
+    <script>
+        function highlightItems() {
+            var highlightItems = document. getElementsByClassName("highlight");
+            
+for (var i = 0; i < highlightItems.length; i++) {
+highlightItems[i].style.backgroundColor = "yellow";
+}
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild Example</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="child1">Child 1</p>
+        <p id="child2">Child 2</p>
+    </div>
+
+    <script>
+        const parentDiv = document.getElementById('parent');
+
+        // Create new node and append it to the end of the parent
+        const newChild = document.createElement('p');
+        newChild.textContent = 'Child 3';
+        parentDiv.appendChild(newChild); // Adds Child 3
+    </script>
+</body>
+</html>

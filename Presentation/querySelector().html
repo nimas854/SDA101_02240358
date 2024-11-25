@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Articles</h1>
+    <div class="article">
+        <h2>Article 1</h2>
+        <p>This is the first article and this is just some text.</p>
+        </div>
+        <div class="article">
+        <h2>Article 2</h2>
+        <p>This is the second article and this is more text.</p>
+        </div>
+        <div class="article">
+        <h2>Article 3</h2>
+        <p>This is the third and final article with even more text.</p>
+        </div>
+        <button onclick="highlightItem()">Highlight First Article</button>
+        
+
+        <script>
+            function highlightItem() {
+var thirdArticle = document.querySelector(".article");
+thirdArticle.style.backgroundColor = "yellow";
+}
+        </script>
+
+    
+</body>
+</html>

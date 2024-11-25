@@ -1,0 +1,179 @@
+.container{
+    position: relative;
+    text-align: center;
+
+}
+
+.container1 {
+    position: absolute;
+    right: 42%;
+    
+
+   
+    
+}
+
+.image_1 {
+    position: relative;
+    left: 10%;
+
+}
+
+.image_2 {
+    position: absolute;
+    right: 100px;
+    top: 3200px;
+
+}
+
+.text1 {
+    position: relative;
+    left: 10%;
+    
+}
+
+.text2 {
+    position: absolute;
+    right: 300px;
+    top: 3550px;
+
+
+
+}
+
+.text2_1 {
+    position: absolute;
+    right: 100px;
+    top: 1680px;
+
+}
+
+.one {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-row: 2px;
+    gap: 2px;
+    max-width: 120px;
+    margin: 0 auto;
+    display: inline;
+
+}
+
+/* Individual item styling */
+.product {
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 2px;
+}
+ 
+.product img {
+    width: 30%;
+    height: auto;
+    border-radius: 0%;
+    float: left;
+}
+
+
+.product p {
+    color: #888;
+    font-size: 14px;
+}
+
+.c2 {
+    position:absolute;
+    left: 50%;
+    
+}
+
+.c3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-row: 2px;
+    gap: 2px;
+    max-width: 50px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.c5 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 2px;
+}
+
+
+.contact-section {
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 18px;
+    color: #555;
+    
+}
+.contact-form {
+    margin: 30px auto;
+    max-width: 600px;
+}
+input[type="email"], input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #d6b29a;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #b98d75;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.contact-info div {
+    margin: 0 20px;
+}
+.contact-info div h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.contact-info div p {
+    margin: 0;
+    font-size: 16px;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+

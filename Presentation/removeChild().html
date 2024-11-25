@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeChild Example</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="child1">Child 1</p>
+        <p id="child2">Child 2</p>
+    </div>
+
+    <script>
+        const parentDiv = document.getElementById('parent');
+        const child2 = document.getElementById('child2');
+
+        // Remove Child 2 from the DOM
+        parentDiv.removeChild(child2); // Removes Child 2
+    </script>
+</body>
+</html>
